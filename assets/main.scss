@@ -1,0 +1,85 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// Use grey background for code
+pre, code, .highlighter-rouge .highlight { background-color: #f8f8f8; }
+
+.site-title::before {
+    background-image: url("/assets/Alena.jpg");
+    // background-size: 500px 147px;
+    background-size: 200px 200px;
+	position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    content:"";
+    border-radius: 50%; /* Apply circular clipping */
+    overflow: hidden; /* Hide overflow outside the circular frame */
+}
+
+
+// Media query for mobile view
+@media screen and (max-width: 768px) {
+    .site-title::before {
+		background-image: url("/assets/Alena.jpg");
+		// background-size: 500px 147px;
+        background-size: 100px 100px; // Adjust the size for mobile
+		position: relative;
+		display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; /* Apply circular clipping */
+        overflow: hidden; /* Hide overflow outside the circular frame */
+    }
+}
+
+
+// @import "minima";
+
+// // Use grey background for code
+// pre, code, .highlighter-rouge .highlight { background-color: #f8f8f8; }
+
+// .site-header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .site-title {
+//   position: relative;
+// }
+
+// .site-title::before {
+//   background-image: url("/assets/Alena.jpg");
+//   background-size: 200px 200px;
+//   position: absolute;
+//   top: 0;
+//   left: -220px; /* Adjust this value to control spacing between logo and title */
+//   width: 200px;
+//   height: 200px;
+//   content: "";
+//   border-radius: 50%;
+//   overflow: hidden;
+// }
+
+// .site-title::before {
+//     background-image: url("/assets/Alena.jpg");
+//     // background-size: 500px 147px;
+//     background-size: 200px 200px;
+// 	position: relative;
+//     display: inline-block;
+//     width: 200px;
+//     height: 200px;
+//     content:"";
+//     border-radius: 50%; /* Apply circular clipping */
+//     overflow: hidden; /* Hide overflow outside the circular frame */
+// }
+
+// .site-title a {
+//   display: inline-block;
+//   text-align: center;
+// }
+
